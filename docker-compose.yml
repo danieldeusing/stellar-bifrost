@@ -27,17 +27,17 @@ services:
       environment:
         POSTGRES_USER:                     stellar
         POSTGRES_PASSWORD:                 password
-        MASTER_PUBLIC_KEY:                 "xpub6C79eBsW2XQbzfXFsRv51Lac6Ckx5nyqf9cUmFr1fuAEHGXmpq8oPNMqCpH1jTdwP3s5SD644R8KK4cVytk9Jxcxcb7JsfNxcGNRbG5q4pq"
+        MASTER_PUBLIC_KEY:                 "xpub661MyMwAqRbcFoPVgm64oXHuLPXLfNkM7Q2MLHZvPH1frpNvRRPLgARvbwgGR83wtxCafi7ar32y7gzAp9t1ZLrxpVK6nRoYRBKWqPyaYBY"
         BIFROST_BITCOIN_RPC_SERVER:        "bitcoind:18332"
-        RPC_USER:                          "user"
-        RPC_PASS:                          "password"
+        RPC_USER:                          "bitcoin-core-user"
+        RPC_PASS:                          "NW#+ph!p2f#DBRk+9$hxc9P"
         TESTNET:                           "true"
         MINIMUM_VALUE_BTC:                 "0.00001"
         BIFROST_ETHEREUM_RPC_SERVER:       "ethereum:8545"
         NETWORK_ID:                        "4"
         MINIMUM_VALUE_ETH:                 "0.00001"
-        BIFROST_STELLAR_ISSUER_PUBLIC_KEY: "GBVTKKTTDEMJN4QZQXREQMUFVYJX6OTHIGS7P4R3NJGI3I3XVXFXSR3F"
-        BIFROST_STELLAR_SIGNER_SECRET_KEY: "SAR6ER2FZRL6WP5BQULZK7O6WR5TCTAMTZMC25AU24GZXNYPXFNNJNHO"
+        BIFROST_STELLAR_ISSUER_PUBLIC_KEY: "GATIJXESQLVCNWKQ3D6N6RMKTTEZARGMPKY4IGZD2CBJUEEVX3RTPH6K"
+        BIFROST_STELLAR_SIGNER_SECRET_KEY: "SBXERYZ5S2LJT6WXSWQEZ5ACALKKQBMUILHL7GKXGUIMG4JHXFE7WEUZ"
         TOKEN_ASSET_CODE:                  "LMB"
         NEEDS_AUTHORIZE:                   "false"
         BIFROST_STELLAR_HORIZON:           "http://stellarhorizon:8000"
