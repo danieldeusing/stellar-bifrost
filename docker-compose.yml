@@ -10,6 +10,7 @@ services:
         POSTGRES_USER:                     stellar
         POSTGRES_PASSWORD:                 password
         POSTGRES_DB:                       bifrostdb
+      network_mode: "host"
       networks:
           - stellarbitcoin_default
           - stellarethereum_default
@@ -46,6 +47,7 @@ services:
         BIFROST_DB_DSN:                    "postgres://stellar:password@bifrostpostgres/bifrostdb?sslmode=disable"
       ports:
         - "8800:8800"
+      network_mode: "host"
       networks:
           - stellarbitcoin_default
           - stellarethereum_default
