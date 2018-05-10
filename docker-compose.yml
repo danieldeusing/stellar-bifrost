@@ -27,7 +27,8 @@ services:
       environment:
         POSTGRES_USER:                   stellar
         POSTGRES_PASSWORD:               password
-        MASTER_PUBLIC_KEY:               "xpub6E9BpPGtKfgwCzJY4Jjb6MwUqzhCZuRF3n1vTXLfJYSH9F8gXm4pdVTphVEv419wZBSq9vUJCnzWLZcnhvmq88wnVpyaeEiCMKH4ndtKSDe"
+        MASTER_PUBLIC_KEY_BTC:           "xpub6E9BpPGtKfgwCzJY4Jjb6MwUqzhCZuRF3n1vTXLfJYSH9F8gXm4pdVTphVEv419wZBSq9vUJCnzWLZcnhvmq88wnVpyaeEiCMKH4ndtKSDe"
+        MASTER_PUBLIC_KEY_ETH:           "xpub6E9BpPGtKfgwCzJY4Jjb6MwUqzhCZuRF3n1vTXLfJYSH9F8gXm4pdVTphVEv419wZBSq9vUJCnzWLZcnhvmq88wnVpyaeEiCMKH4ndtKSDf"
         BIFROST_BITCOIN_RPC_SERVER:      "bitcoind:18332"
         RPC_USER:                        "user"
         RPC_PASS:                        "password"

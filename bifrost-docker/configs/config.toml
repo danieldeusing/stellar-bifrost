@@ -3,7 +3,7 @@ using_proxy = false
 access_control_allow_origin_header = "*"
 
 [bitcoin]
-master_public_key = "${MASTER_PUBLIC_KEY}"
+master_public_key = "${MASTER_PUBLIC_KEY_BTC}"
 rpc_server = "${BIFROST_BITCOIN_RPC_SERVER}"
 rpc_user = "${RPC_USER}"
 rpc_pass = "${RPC_PASS}"
@@ -12,7 +12,7 @@ minimum_value_btc = "${MINIMUM_VALUE_BTC}"
 token_price = "${TOKEN_PRICE_BTC}"
 
 [ethereum]
-master_public_key = "${MASTER_PUBLIC_KEY}"
+master_public_key = "${MASTER_PUBLIC_KEY_ETH}"
 rpc_server = "${BIFROST_ETHEREUM_RPC_SERVER}"
 network_id = "${NETWORK_ID}"
 minimum_value_eth = "${MINIMUM_VALUE_ETH}"
