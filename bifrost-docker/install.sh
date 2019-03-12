@@ -27,4 +27,4 @@ then
   mv ./bifrostDL /built-bifrost
 fi
 
-echo "\nDone installing bifrost...\n"
+echo "Done installing Bifrost..."
