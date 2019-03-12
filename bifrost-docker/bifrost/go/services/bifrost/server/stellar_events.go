@@ -19,7 +19,16 @@ func (s *Server) onStellarAccountCreated(destination string) {
 	}
 
 	// SNG Custom Change: added s.SignerPublicKey and removed it from GenerateAddress
-	s.SSEServer.BroadcastEvent(association.Address, sse.AccountCreatedAddressEvent, s.SignerPublicKey)
+	data := map[string]string{
+		"signer": s.SignerPublicKey,
+	}
+
+	j, err := json.Marshal(data)
+	if err != nil {
+		s.log.WithField("data", data).Error("Error marshalling json")
+	}
+
+	s.SSEServer.BroadcastEvent(association.Address, sse.AccountCreatedAddressEvent, j)
 }
 
 func (s *Server) onExchanged(destination string) {
