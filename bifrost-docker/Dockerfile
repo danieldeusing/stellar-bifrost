@@ -1,7 +1,7 @@
 FROM golang:stretch as builder
 ENV BUILD_FROM_SRC 1
 
-COPY /debug /debug/
+COPY /bifrost /bifrost/
 
 ADD install.sh /
 RUN chmod +x /install.sh

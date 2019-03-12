@@ -228,11 +228,11 @@ func (s *Server) handlerGenerateAddress(w stdhttp.ResponseWriter, r *stdhttp.Req
 	// Create SSE stream
 	s.SSEServer.CreateStream(address)
 
+	// SNG Custom Change: removed 		Signer: s.SignerPublicKey
 	response := GenerateAddressResponse{
 		ProtocolVersion: ProtocolVersion,
 		Chain:           string(chain),
 		Address:         address,
-		Signer:          s.SignerPublicKey,
 	}
 
 	responseBytes, err := json.Marshal(response)

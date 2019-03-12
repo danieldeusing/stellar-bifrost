@@ -11,7 +11,7 @@ then
   # && git clone --depth 1 --branch horizon-v0.17.3 https://github.com/stellar/go.git /go/src/github.com/stellar/go \
 
   mkdir -p /go/src/github.com/stellar/ \
-    && mv /debug/go /go/src/github.com/stellar/ \
+    && mv /bifrost/go /go/src/github.com/stellar/ \
     && cd /go/src/github.com/stellar/go \
     && curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh \
     && dep ensure -v \

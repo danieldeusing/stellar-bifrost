@@ -18,7 +18,8 @@ func (s *Server) onStellarAccountCreated(destination string) {
 		return
 	}
 
-	s.SSEServer.BroadcastEvent(association.Address, sse.AccountCreatedAddressEvent, nil)
+	// SNG Custom Change: added s.SignerPublicKey and removed it from GenerateAddress
+	s.SSEServer.BroadcastEvent(association.Address, sse.AccountCreatedAddressEvent, s.SignerPublicKey)
 }
 
 func (s *Server) onExchanged(destination string) {
