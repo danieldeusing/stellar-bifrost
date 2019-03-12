@@ -17,14 +17,14 @@ then
     && dep ensure -v \
     && go install github.com/stellar/go/services/bifrost
 
-    mv /go/bin/bifrost /bifrost
+    mv /go/bin/bifrost /built/bifrost
  else
   apt-get install -y wget
 
-  wget -O bifrost https://github.com/stellar/go/releases/download/bifrost-v0.0.2/bifrost-v0.0.2-linux-amd64
-  chmod +x ./bifrost
+  wget -O bifrostDL https://github.com/stellar/go/releases/download/bifrost-v0.0.2/bifrost-v0.0.2-linux-amd64
+  chmod +x ./bifrostDL
 
-  mv ./bifrost /bifrost
+  mv ./bifrostDL /built/bifrost
 fi
 
 echo "\nDone installing bifrost...\n"
