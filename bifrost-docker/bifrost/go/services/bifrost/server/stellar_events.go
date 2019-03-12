@@ -18,7 +18,7 @@ func (s *Server) onStellarAccountCreated(destination string) {
 		return
 	}
 
-	// SNG Custom Change: added s.SignerPublicKey and removed it from GenerateAddress
+	// SNG Mod: added s.SignerPublicKey and removed it from GenerateAddress
 	data := map[string]string{
 		"signer": s.SignerPublicKey,
 	}

@@ -43,5 +43,7 @@ type GenerateAddressResponse struct {
 	ProtocolVersion int    `json:"protocol_version"`
 	Chain           string `json:"chain"`
 	Address         string `json:"address"`
-	Signer          string `json:"signer"`
+
+	// SNG Mod: removed signer
+	// Signer          string `json:"signer"`
 }

@@ -1,5 +1,4 @@
-Using this code:
-
+Based on this version:
 git clone --depth 1 --branch horizon-v0.17.3 https://github.com/stellar/go.git
 
-Changes in the code are marked 'SNG Custom Change:'
+Changes in the code are marked 'SNG Mod:'
