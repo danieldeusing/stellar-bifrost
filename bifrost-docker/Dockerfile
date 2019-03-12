@@ -10,7 +10,7 @@ RUN /install.sh
 # -----------------------
 FROM debian:latest
 
-COPY --from=builder /built/bifrost /go/bin/bifrost
+COPY --from=builder /built-bifrost /go/bin/bifrost
 
 ADD build-config /usr/bin/build-config
 RUN chmod +x /usr/bin/build-config
